@@ -27,7 +27,7 @@ This PHP file serves as the main entry point for the application. It performs th
 
 1. Clone the repository to your local machine.
 2. Ensure you have PHP installed on your server.
-3. Require `vlucas/phpdotenv` using Composer:
+3. Require `vlucas/phpdotenv` using Composer (run in project root directory):
     ```sh
     composer require vlucas/phpdotenv
     ```
