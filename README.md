@@ -27,11 +27,14 @@ This PHP file serves as the main entry point for the application. It performs th
 
 1. Clone the repository to your local machine.
 2. Ensure you have PHP installed on your server.
-3. Create a `.env` file in the root directory of the project and add your OpenWeatherMap API key:
+3. Require `vlucas/phpdotenv` using Composer:
+    ```sh
+    composer require vlucas/phpdotenv
+    ```
+4. Create a `.env` file in the root directory of the project and add your OpenWeatherMap API key:
     ```env
     API_KEY=your_openweathermap_api_key
-    ```
-4. Replace the placeholder API key in `index.php` and `get_weather.php` with your own OpenWeatherMap API key.
+    ```         
 5. Open `index.php` in your web browser to view the weather forecast application.
 
 ### Dependencies
