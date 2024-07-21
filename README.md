@@ -36,6 +36,3 @@ This PHP file serves as the main entry point for the application. It performs th
 - OpenWeatherMap API
 - ipinfo.io API (for IP-based location data)
 
-### License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
