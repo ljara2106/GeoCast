@@ -1,7 +1,15 @@
 <?php
-header('Content-Type: application/json');
+require 'vendor/autoload.php';
 
-$apiKey = 'a27bba4b8eb0638c659cc4f1e1bb4f52';
+use Dotenv\Dotenv;
+
+// Load environment variables from .env file
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$apiKey = $_ENV['API_KEY'];
+
+header('Content-Type: application/json');
 
 if (isset($_GET['lat']) && isset($_GET['lon'])) {
     $latitude = $_GET['lat'];

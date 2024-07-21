@@ -1,10 +1,13 @@
 <?php
-// prevent cache
-header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
-header("Cache-Control: post-check=0, pre-check=0", false);
-header("Pragma: no-cache");
+require 'vendor/autoload.php';
 
-$apiKey = 'a27bba4b8eb0638c659cc4f1e1bb4f52';
+use Dotenv\Dotenv;
+
+// Load environment variables from .env file
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$apiKey = $_ENV['API_KEY'];
 
 
 // Function to get the visitor's IP address
